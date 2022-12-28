@@ -34,6 +34,7 @@
             </div>
 
             <div class="left">
+                <a href=""></a>
                 <button type="button" class="btn btn-outline-light btn-sm">Login</button>
                 <button type="button" class="btn btn-outline-light btn-sm">Register</button>
             </div>
