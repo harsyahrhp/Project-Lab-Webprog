@@ -24,25 +24,37 @@
     </div>
 
     <div class="input">
-        <form>
+        <form action="/Register" method="post">
+            @csrf
             <div class="mb-3">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Full Name">
+                <input type="text" class="form-control" name='name' id="name"  placeholder="Full Name" is-invalid>
+                @error('name')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
               </div>
             <div class="mb-3">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+              <input type="email" class="form-control" name='email' id="email" placeholder="Email">
             </div>
             <div class="mb-3">
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <input type="password" class="form-control" name='password' id="password" placeholder="Password">
             </div>
             <div class="mb-3">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                <input type="password" class="form-control" name='password1' id="password1" placeholder="Confirm Password">
               </div>
-          </form>
-    </div>
+
 
     <div class="butn">
         <button type="submit" class="btn btn-warning">Register Now</button>
     </div>
+
+          </form>
+    </div>
+
+    {{-- <div class="butn">
+        <button type="submit" class="btn btn-warning">Register Now</button>
+    </div> --}}
     </div>
 
 @endsection
