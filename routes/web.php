@@ -39,6 +39,10 @@ Route::get('/HomeUser', function () {
     return view('HomeUser');
 });
 
+Route::get('/Product', function () {
+    return view('Product');
+});
+
 Route::get('/Login', [LoginController::class, 'index']);
 Route::post('/Login', [LoginController::class, 'authenticate']);
 
