@@ -60,7 +60,7 @@
         <div class="wrapper">
             <div class="right">
                 <a href="/">Home</a>
-                <a href="">Show Product</a>
+                <a href="/Product">Show Product</a>
             </div>
 
             <div class="left">
