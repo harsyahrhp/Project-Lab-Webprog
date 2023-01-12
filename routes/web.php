@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeAdminController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +45,10 @@ Route::get('/Login', [LoginController::class, 'index']);
 Route::post('/Login', [LoginController::class, 'authenticate']);
 
 Route::get('/Register', [RegisterController::class, 'index']);
-
 Route::post('/Register', [RegisterController::class, 'store']);
+
+Route::group(['middleware' => ['auth']], function () {
+    // Route::get('/Home', 'HomeController@index');
+    // Route::get('/HomeAdmin', HomeAdminController@)
+});
 
