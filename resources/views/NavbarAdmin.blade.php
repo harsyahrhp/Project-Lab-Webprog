@@ -41,7 +41,7 @@
     <div class="navbar">
         <div class="wrapper">
                 <a href="/">Home</a>
-                <a href="">Show Product</a>
+                <a href="">Show Product ADMIN</a>
                 <a href="">Manage Item</a>
 
 

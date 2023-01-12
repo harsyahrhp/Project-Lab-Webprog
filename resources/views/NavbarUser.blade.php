@@ -40,7 +40,7 @@
 <body>
     <div class="navbar">
         <div class="wrapper">
-                <a href="/">Home</a>
+                <a href="/HomeUser">Home</a>
                 <a href="">Show Product</a>
                 <a href="">My Cart</a>
                 <a href="">Transaction History</a>
